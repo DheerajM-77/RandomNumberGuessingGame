@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./icon.png">
+    <title>Random Number Game</title>
+    <style>
+        body {
+    background-color: #f3f3f3;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; 
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position:absolute; 
+    margin-top: -100px;
+    width: 900px;
+    height: 300px;
+}
+
+h1 {
+    color: #333;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#themeToggleBtn{
+    background-color: grey;
+    margin-left: 90rem;
+    margin-bottom: 46rem;
+}
+
+body.light-theme {
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+body.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+.container.light-theme {
+    background-color: #fff;
+    color: #333; 
+}
+
+.container.dark-theme {
+    background-color: #444;
+    color: #fff; 
+}
+
+.container.dark-theme h1,
+.container.dark-theme p {
+    color: #fff; 
+}
+
+.container.dark-theme #result {
+    color: #fff; 
+}
+
+.star.light-theme {
+    background-color: #000;
+}
+
+.star.dark-theme {
+    background-color: #fff; 
+}
+
+p.light-theme {
+    color: #333;
+}
+
+p.dark-theme {
+    color: #fff;
+}
+
+/* New styles for responsiveness */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 1em;
+    }
+    input[type="text"] {
+        width: 80%;
+    }
+    button {
+        font-size: 0.8em;
+    }
+}
+    </style>
+</head>
+<body class="dark-theme">
+    <button id="themeToggleBtn">Toggle Theme</button>
+    <div class="container dark-theme">
+        <h1>Random Number Game</h1>
+        <h1>Enter Your Name</h1>
+        <input type="text" id="userNameInput" placeholder="Your Name" required>
+        <button id="submitNameBtn">Submit</button>
+        
+    </div>
+    <script src="./starting.js"></script>
+</body>
+</html>
